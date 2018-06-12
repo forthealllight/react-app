@@ -10,8 +10,7 @@ export default class Login extends React.Component {
     func();
   }
   render() {
-    return
-      <div className="m-login">
+    return <div className="m-login">
           <div className="m-login-panel">
               <div className="u-title">FIND THE MOST LOVED ACTIVITIES</div>
               <div className="u-subtitle">BLACK CAT</div>

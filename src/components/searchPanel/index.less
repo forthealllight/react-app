@@ -17,21 +17,33 @@
     }
     .u-list{
       margin:0 .4rem;
-      margin-top:.6rem;
-      display:flex;
+      margin-top:.3rem;
+      overflow:hidden;
       .u-item{
+        cursor:pointer;
+        float:left;
+        width:auto;
+        margin-right:.2rem;
+        border-radius:.3rem;
+        padding:0 .1rem;
+        height:.8rem;
+        line-height:.8rem;
         flex:1;
         font-size:.3rem;
         text-align:left;
         color:#fff;
         letter-spacing:.01rem;
+        &.active{
+          background:#E5F7A9;
+          color:#000;
+        }
       }
     }
   }
   &-channel{
     .u-title{
       margin:0 auto;
-      margin-top:.4rem;
+      margin-top:.8rem;
       width:1.6rem;
       height:.6rem;
       line-height:.7rem;
@@ -51,13 +63,16 @@
        margin-right:.3rem;
        border-radius:.3rem;
        padding:0 .2rem;
-       flex:1;
        font-size:.2rem;
        text-align:center;
        height:.6rem;
        line-height:.6rem;
        border:1px solid white;
        color:white;
+       &.active{
+         background:#E5F7A9;
+         color:#000;
+       }
       }
 
     }
@@ -79,6 +94,7 @@
     .u-text{
       color:#666;
       font-size:.4rem;
+      cursor:pointer;
     }
   }
 }

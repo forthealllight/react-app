@@ -1,7 +1,7 @@
 import './index.less';
 import React from 'react';
 import Login from '../login';
-import Menu from '../menu';
+import Menu from '../../components/menu';
 import LoginSuccess from '../loginSuccess';
 export default class Home extends React.Component{
   constructor(props){
