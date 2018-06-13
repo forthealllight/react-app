@@ -1,9 +1,5 @@
-import './common/css/common.css';
-import 'whatwg-fetch';
-import querystring from 'querystring';
-import React from 'react';
-import {render} from 'react-dom';
-import initialSize from './utils/flexiable';
-import Home from './containers/home/index.js';
-initialSize(window, window['lib'] || (window['lib'] = {}))
-render(<Home/>,document.getElementById('app'))
+import {observable,computed,autorun} from 'mobx';
+var numbers=observable([1,2,3]);
+var sum=computed(()=>numbers.reduce((a,b)=>a+b,0));
+var disposer=autorun(()=>console.log(sum.get()));
+numbers.push(4);

@@ -85,12 +85,12 @@ module.exports={
          res.header('Access-Control-Allow-Methods','POST,GET');
          if(urlTarget==''){
            const url=req.originalUrl;
-           //deal with the 'get' request
+           //deal with the 'get' request 
            let index=url.indexOf('?');
            if(index!=-1){
               url=url.slice(0,index);
            }
-           if(url.length>1&&url.indexOf('.ico')=='-1'&&url.indexOf('.js')==-1&&url.indexOf('.css')==-1&&url.indexOf('.jpg')==-1&&url.indexOf('.png')==-1&&url.indexOf('.svg')==-1){
+           if(url.length>1&&url.indexOf('.ico')=='-1'&&url.indexOf('.js')==-1&&url.indexOf('.css')==-1){
              const data=require('./mock'+url);
              res.json(data);
            }
