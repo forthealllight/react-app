@@ -1,5 +1,5 @@
 # react-app
-a app demo using react16.4,redux4.0
+a app demo using react16.4,mobx4.0
 
 
 ## 1.安装和运行
